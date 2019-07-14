@@ -1,0 +1,43 @@
+КРАТКАЯ ИНСТРУКЦИЯ
+
+ИСХОДНИКИ
+Склонировать иходники с github:  https://github.com/vladmirk/Translator.git
+git clone https://github.com/vladmirk/Translator.git
+В корне прочитать файл Read.me
+
+КОНФИГУРАЦИЯ
+Настройки вынесены в c:\mydev\Translator\src\main\resources\application.properties
+Поддерживается перевод через службу Yandex (YANDEX) или простой транслитерацией (TRANSLIT): 
+translator.vendor=
+
+Для логирование в базу данных можно использовать Spring JdbcTemplate(SPRING_JDBC) или «чистый» JDBC (PURE_JDBC). 
+translator.logger=
+
+СБОРКА
+Запустить из командной строки 
+gradle build
+Не делал разные конфигурации ака Разработка или Продакшн
+
+ЗАПУСК
+Сервер запускается командой строкой (>=Java 8):
+java -jar build/libs/translator-0.0.1-SNAPSHOT.jar
+или воспользоваться RunTranslator.cmd
+
+Клиент:
+Простой WEB клиент доступен по порту 8080:
+http://localhost:8080/
+
+Пример команды CURL:
+TestCurl.cmd
+База: используется H2 in memory
+консоль h2 доступна:
+http://localhost:8080/h2-console/
+Generic H2 (Embedded)
+org.h2.Driver
+jdbc:h2:mem:translatordb
+sa
+<пусто>
+
+Лог файл:
+Log/Translator.log
+

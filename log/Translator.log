@@ -1,0 +1,84 @@
+2019-07-15 01:18:36.971  INFO 1600 --- [Test worker] o.v.t.TranslatorApplicationTests         : Starting TranslatorApplicationTests on 279L0005 with PID 1600 (started by vkutnyakov in C:\mydev\Translator)
+2019-07-15 01:18:36.974  INFO 1600 --- [Test worker] o.v.t.TranslatorApplicationTests         : No active profile set, falling back to default profiles: default
+2019-07-15 01:18:39.186  INFO 1600 --- [Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'asyncConfigurator' of type [org.vk.translator.AsyncConfigurator$$EnhancerBySpringCGLIB$$8eeb78e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-15 01:18:39.622  INFO 1600 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 01:18:39.804  INFO 1600 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 01:18:40.337  INFO 1600 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2019-07-15 01:18:40.352  INFO 1600 --- [Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'translatorExecutor'
+2019-07-15 01:18:41.172  INFO 1600 --- [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-15 01:18:41.468  INFO 1600 --- [Test worker] o.v.t.TranslatorApplicationTests         : Started TranslatorApplicationTests in 4.814 seconds (JVM running for 5.964)
+2019-07-15 01:18:41.769  INFO 1600 --- [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-07-15 01:18:41.779  INFO 1600 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'translatorExecutor'
+2019-07-15 01:18:41.782  INFO 1600 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-15 01:18:41.789  INFO 1600 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-15 01:19:03.680  INFO 19448 --- [main] org.vk.translator.TranslatorApplication  : Starting TranslatorApplication on 279L0005 with PID 19448 (C:\mydev\Translator\build\libs\translator-0.0.1-SNAPSHOT.jar started by vkutnyakov in c:\mydev\Translator)
+2019-07-15 01:19:03.683  INFO 19448 --- [main] org.vk.translator.TranslatorApplication  : No active profile set, falling back to default profiles: default
+2019-07-15 01:19:04.965  INFO 19448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'asyncConfigurator' of type [org.vk.translator.AsyncConfigurator$$EnhancerBySpringCGLIB$$5db5522a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-15 01:19:05.676  INFO 19448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-15 01:19:05.711  INFO 19448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-15 01:19:05.711  INFO 19448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-15 01:19:05.846  INFO 19448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-15 01:19:05.846  INFO 19448 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2111 ms
+2019-07-15 01:19:06.016  INFO 19448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 01:19:06.318  INFO 19448 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 01:19:06.549  INFO 19448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2019-07-15 01:19:06.551  INFO 19448 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'translatorExecutor'
+2019-07-15 01:19:06.969  INFO 19448 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-15 01:19:07.132  INFO 19448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-15 01:19:07.137  INFO 19448 --- [main] org.vk.translator.TranslatorApplication  : Started TranslatorApplication in 3.998 seconds (JVM running for 4.509)
+2019-07-15 01:19:23.236  INFO 19448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-15 01:19:23.237  INFO 19448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-15 01:19:23.252  INFO 19448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-07-15 01:19:34.046  INFO 19448 --- [Translator-2] o.v.t.t.AsyncTranslationService          : Переводим 'день', 'ru->en' 
+2019-07-15 01:19:34.047  INFO 19448 --- [Translator-1] o.v.t.t.AsyncTranslationService          : Переводим 'Добрый', 'ru->en' 
+2019-07-15 01:19:34.747  INFO 19448 --- [Translator-3] o.v.t.l.s.SpringJDBCLoggingService       : 01:19:34 Клиент 0:0:0:0:0:0:0:1 запросил перевод'день' с ru на en: day
+2019-07-15 01:19:34.842  INFO 19448 --- [Translator-4] o.v.t.l.s.SpringJDBCLoggingService       : 01:19:34 Клиент 0:0:0:0:0:0:0:1 запросил перевод'Добрый' с ru на en: Good
+2019-07-15 01:43:25.878  INFO 19448 --- [Translator-5] o.v.t.t.AsyncTranslationService          : Переводим 'ddd', 'ru->en' 
+2019-07-15 01:43:26.032  INFO 19448 --- [Translator-2] o.v.t.l.s.SpringJDBCLoggingService       : 01:43:26 Клиент 0:0:0:0:0:0:0:1 запросил перевод'ddd' с ru на en: ddd
+2019-07-15 01:45:03.455  WARN 19448 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-07-15 01:45:30.307  WARN 19448 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded' not supported]
+2019-07-15 01:45:35.048  WARN 19448 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded' not supported]
+2019-07-15 01:45:57.674  INFO 19448 --- [Translator-3] o.v.t.t.AsyncTranslationService          : Переводим 'ddd', 'ru->en' 
+2019-07-15 01:45:57.872  INFO 19448 --- [Translator-1] o.v.t.l.s.SpringJDBCLoggingService       : 01:45:57 Клиент 0:0:0:0:0:0:0:1 запросил перевод'ddd' с ru на en: ddd
+2019-07-15 01:47:29.989  WARN 19448 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded' not supported]
+2019-07-15 01:48:10.194  WARN 19448 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'text': was expecting 'null', 'true', 'false' or NaN; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'text': was expecting 'null', 'true', 'false' or NaN
+ at [Source: (PushbackInputStream); line: 1, column: 6]]
+2019-07-15 01:50:12.225  WARN 19448 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (''' (code 39)): expected a valid value (number, String, array, object, 'true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (''' (code 39)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2019-07-15 01:50:25.998  WARN 19448 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (''' (code 39)): expected a valid value (number, String, array, object, 'true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (''' (code 39)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2019-07-15 01:50:56.238  WARN 19448 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('t' (code 116)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('t' (code 116)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 1, column: 3]]
+2019-07-15 01:52:14.860  INFO 19448 --- [Translator-4] o.v.t.t.AsyncTranslationService          : Переводим 'ddd', 'ru->en' 
+2019-07-15 01:52:14.977  INFO 19448 --- [Translator-5] o.v.t.l.s.SpringJDBCLoggingService       : 01:52:14 Клиент 0:0:0:0:0:0:0:1 запросил перевод'ddd' с ru на en: ddd
+2019-07-15 01:52:37.526  WARN 19448 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid UTF-8 middle byte 0xe0; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 middle byte 0xe0
+ at [Source: (PushbackInputStream); line: 1, column: 9] (through reference chain: org.vk.translator.translation.TranslationParam["text"])]
+2019-07-15 01:55:19.841  WARN 19448 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Invalid UTF-8 start byte 0xa6; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xa6
+ at [Source: (PushbackInputStream); line: 1, column: 9] (through reference chain: org.vk.translator.translation.TranslationParam["text"])]
+2019-07-15 01:57:18.132  INFO 19448 --- [Translator-1] o.v.t.t.AsyncTranslationService          : Переводим 'gentlemen', 'en->ru' 
+2019-07-15 01:57:18.132  INFO 19448 --- [Translator-2] o.v.t.t.AsyncTranslationService          : Переводим 'Hello', 'en->ru' 
+2019-07-15 01:57:18.132  INFO 19448 --- [Translator-3] o.v.t.t.AsyncTranslationService          : Переводим 'dear', 'en->ru' 
+2019-07-15 01:57:18.352  INFO 19448 --- [Translator-3] o.v.t.l.s.SpringJDBCLoggingService       : 01:57:18 Клиент 0:0:0:0:0:0:0:1 запросил перевод'dear' с en на ru: дорогие
+2019-07-15 01:57:18.353  INFO 19448 --- [Translator-4] o.v.t.l.s.SpringJDBCLoggingService       : 01:57:18 Клиент 0:0:0:0:0:0:0:1 запросил перевод'gentlemen' с en на ru: господа
+2019-07-15 01:57:18.389  INFO 19448 --- [Translator-1] o.v.t.l.s.SpringJDBCLoggingService       : 01:57:18 Клиент 0:0:0:0:0:0:0:1 запросил перевод'Hello' с en на ru: Привет
+2019-07-15 02:01:38.202  INFO 8368 --- [restartedMain] org.vk.translator.TranslatorApplication  : Starting TranslatorApplication on 279L0005 with PID 8368 (C:\mydev\Translator\out\production\classes started by vkutnyakov in C:\mydev\Translator)
+2019-07-15 02:01:38.206  INFO 8368 --- [restartedMain] org.vk.translator.TranslatorApplication  : No active profile set, falling back to default profiles: default
+2019-07-15 02:01:38.272  INFO 8368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-15 02:01:38.272  INFO 8368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-15 02:01:42.760  INFO 8368 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'asyncConfigurator' of type [org.vk.translator.AsyncConfigurator$$EnhancerBySpringCGLIB$$9c2d0dad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-15 02:01:46.575  INFO 8368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-07-15 02:01:46.780  INFO 8368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-15 02:01:46.782  INFO 8368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-15 02:01:47.559  INFO 8368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-15 02:01:47.560  INFO 8368 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9288 ms
+2019-07-15 02:01:48.860  INFO 8368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 02:01:49.416  INFO 8368 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 02:01:50.094  INFO 8368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-15 02:01:51.985  INFO 8368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2019-07-15 02:01:51.996  INFO 8368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'translatorExecutor'
+2019-07-15 02:01:55.061  INFO 8368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-15 02:01:56.523  INFO 8368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-07-15 02:01:56.540  INFO 8368 --- [restartedMain] org.vk.translator.TranslatorApplication  : Started TranslatorApplication in 19.12 seconds (JVM running for 20.444)
+2019-07-15 02:02:10.188  INFO 8368 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-15 02:02:10.189  INFO 8368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-15 02:02:10.279  INFO 8368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 88 ms

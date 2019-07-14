@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" --data "{\"text\":\"Hello dear gentlemen\",\"from\":\"en\",\"to\":\"ru\"}" http://localhost:8080/translate
